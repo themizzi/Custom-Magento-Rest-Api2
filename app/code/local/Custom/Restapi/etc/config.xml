@@ -1,0 +1,14 @@
+<config>
+    <modules>
+        <Custom_Restapi>
+            <version>0.1.0</version>
+        </Custom_Restapi>
+    </modules>
+    <global>
+        <models>
+            <custom_restapi>
+                <class>Custom_Restapi_Model</class>
+            </custom_restapi>
+        </models>
+    </global>
+</config>

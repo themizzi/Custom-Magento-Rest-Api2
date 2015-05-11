@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+    <api2>
+        <resource_groups>
+            <custom_restapi translate="title" module="Custom_Restapi">
+                <title>Custom Rest API</title>
+                <sort_order>10</sort_order>
+            </custom_restapi>
+        </resource_groups>
+        <resources>
+            <custom_restapi translate="title" module="Custom_Restapi">
+                <group>custom_restapi</group>
+                <model>custom_restapi/api2_restapi</model>
+                <title>Testing My Rest API</title>
+                <sort_order>10</sort_order>
+                <privileges>
+                    <guest>
+                        <create>1</create>
+                    </guest>
+                </privileges>
+                <attributes  translate="firstname lastname email password" module="Custom_Restapi">
+                    <firstname>First Name</firstname>
+                    <lastname>Last Name</lastname>
+                    <email>Email</email>
+                    <password>Password</password>
+                </attributes>
+                <routes>
+                    <route_entity>
+                        <route>/customer/:id</route>
+                        <action_type>entity</action_type>
+                    </route_entity>
+                    <route_collection>
+                        <route>/customer</route>
+                        <action_type>collection</action_type>
+                    </route_collection>
+                </routes>
+                <versions>1</versions>
+            </custom_restapi>
+        </resources>
+    </api2>
+</config>
